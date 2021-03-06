@@ -1,0 +1,134 @@
+@import 'colors&etc.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,500&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+color: $DarkGrayishBlue;
+font-size: $Fontsize;
+}
+p{
+    color: $GrayishBlue;
+    font-size: $Fontsize;
+    font-weight: $fontw;
+}
+a, li {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Bai Jamjuree', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*main container*/
+.container{
+    width: $desktopWidth;
+    margin: 0 auto;
+}
+/*buttins style*/
+.btn__blue{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: $LightBlue;
+    padding: 1rem 2.4rem;
+    border-radius: 15px;
+    color: $white;
+    box-shadow: 0px 1px 5px $LightBlue;
+    font-weight: $fontw;
+    text-align: center;
+    &:hover{
+        box-shadow: 0px 2px 15px $LightBlue;
+     }
+  
+}
+.btn__cyan{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: $StrongCyan;
+    padding: 1rem 2.4rem;
+    border-radius: 15px;
+    color: $white;
+    font-weight: $fontw;
+    text-align: center;
+     &:hover{
+        box-shadow: 0px 2px 15px $StrongCyan;
+     }
+   
+}
+
+/*header style*/
+.header{
+    background-image: url(dist/images/bg-header-desktop.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    &__logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 3.5rem auto;
+        padding-top: $paddingDefault;
+        & img{
+            width: 15rem;
+            margin: $marginAuto;
+            text-align: center;
+        }
+    }
+    &__content{
+     padding: $paddingDefault;
+     text-align: center;
+     & h1{
+         font-weight: $fontBolder;
+         font-size: 2rem;
+         padding-bottom: $paddingDefault;
+     }
+     & p{
+         text-align: center;
+         line-height: 1.8;
+     }
+     
+    }
+
+    &__btns_group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5rem;
+        & a{
+            width: 15%;
+            margin-left: 1rem;
+        }
+    }
+    @media (min-width: $mobileWidth) and (max-width: 1000px) {
+     
+        &__logo{
+            margin: 2rem auto;
+
+            & img{
+                width: 50%;
+            }
+        }
+
+       &__btns_group{
+           width: 100%;
+           display: flex !important;
+           flex-direction: column;
+           justify-content: space-between;
+           align-items: center;
+           & a{
+               width: 100%;
+               margin-bottom: 1rem;
+               text-align: center;
+           }
+       }
+    }
+}
