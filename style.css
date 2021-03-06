@@ -171,4 +171,69 @@ body {
     text-align: center;
   }
 }
+
+/*first section*/
+.first__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 8rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first__sec .title {
+  text-align: center;
+}
+
+.first__sec .title h1 {
+  margin-bottom: 1rem;
+}
+
+.first__sec .title p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.first__sec .image__search {
+  width: 47%;
+  margin-top: 2rem;
+}
+
+.first__sec aside {
+  text-align: start !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.first__sec aside > div {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.first__sec aside > div .title {
+  text-align: start;
+  padding-bottom: 1rem;
+}
+
+.first__sec aside > div p {
+  width: 70%;
+}
+
+@media (min-width: 375px) and (max-width: 1000px) {
+  .first__sec .image__search {
+    width: 47%;
+    margin-top: 2.3rem;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
