@@ -79,12 +79,22 @@ body {
 
 /*header style*/
 .header {
-  background-image: url("images/bg-header-desktop.png");
+  background-image: url("images/bg_header.png");
   background-size: contain;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.header .bg {
+  position: absolute;
+  top: 0;
+  left: 5.1%;
+  width: 100%;
+  max-width: 1440px;
+  z-index: -1;
 }
 
 .header__logo {
